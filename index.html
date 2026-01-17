@@ -1545,10 +1545,9 @@ section.nosotros.visible p{
 
 /* BANNER */
 .ads-slider a{
-  flex:0 0 auto;
-  width:260px;          /* desktop estable */
-  height:130px;
-  padding:6px;
+  width:240px;
+  height:85px;   /* 👈 MÁS BAJO */
+  padding:4px;
   box-sizing:border-box;
 
   display:flex;
@@ -1585,9 +1584,9 @@ section.nosotros.visible p{
   }
 
   .ads-slider a{
-    width:72vw;               /* 👈 SIN ESPACIOS GRANDES */
-    height:95px;
-    padding:4px;
+    width:35vw;               /* 👈 SIN ESPACIOS GRANDES */
+    height:70px;
+    padding:2px;
   }
 
   .ads-slider img{
@@ -1620,6 +1619,50 @@ section.nosotros.visible p{
     opacity:.75;
   }
 }
+.ads-top{
+  background: linear-gradient(
+    180deg,
+    rgba(2,6,23,.95),
+    rgba(2,6,23,.75)
+  );
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.ads-track{
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+}
+
+.ads-track::before{
+  content:"Publicidad";
+  position:absolute;
+  top:-26px;
+  left:12px;
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#94a3b8;
+}
+.ads-slider img{
+  animation: microZoom 12s ease-in-out infinite;
+}
+
+@keyframes microZoom{
+  0%,100%{ transform:scale(1); }
+  50%{ transform:scale(1.02); }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
